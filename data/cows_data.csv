@@ -1,0 +1,6 @@
+Image_ID,Breed,Weight_kg,Age_Months
+img_001,Gir,450.0,36.0
+img_002,Jersey,500.0,48.0
+img_003,Gir,,38.0
+img_004,Holstein,600.0,
+img_005,Jersey,480.0,40.0
