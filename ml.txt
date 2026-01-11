@@ -1,0 +1,66 @@
+#📂 MASTER STATUS FILE: ML/DL TRACK**Current Phase:** Phase 1.5 - Ensemble Methods (Supervised Learning)
+
+##✅ Topics Covered (Completed)1. **Linear Regression**
+2. **Multivariate Regression**
+3. **K-Nearest Neighbors (KNN)**
+4. **Naive Bayes**
+5. **Support Vector Machines (SVM)**
+6. **Decision Trees** *(Theory & Entropy/Gain Math covered)*
+
+1. **Ensemble Learning1. **Random Forest** (Bagging)
+2. **XGBoost** (Boosting)
+
+##🔮 Future Phases1. **Unsupervised Learning** (K-Means, PCA)
+2. **Deep Learning** (PyTorch, CNNs)
+3. **NLP & RAG** (Transformers, LLMs)
+
+---
+
+##🚀 Project Roadmap1. **Mini-Project: The Ensemble** (Predicting using Random Forest/XGBoost - TBD Dataset)
+2. **Project: Dream Catcher** *(Sleep Tracking)*
+* *Status:* **ON HOLD**. Data is ready, but requires **Unsupervised Learning** (K-Means) to execute correctly. We will tackle this immediately after Ensembles.
+
+
+3. **Intermediate Project** *(TBD)*
+4. **Final Big Project** *(TBD)*
+
+---
+
+##⚙️ The Workflows (Strict Adherence) ###1. Concept Learning Loop (For every new topic)
+1. **Theory** (The Logic)
+2. **Algorithm** (The Steps)
+3. **Bare Pure Math Python Implementation** (No libraries, just math)
+4. **Mini-Project** (Using the Standard Workflow below)
+
+###2. The Standard Project Workflow ("The Loop")*Used for every mini-project to build reliable systems.*
+
+1. **The Setup (Hardware & Determinism)**
+* Set `random_state` / Seed.
+* Select Device (`cuda` vs `cpu`).
+* Define Strategy (`Stratified K-Fold`).
+
+
+2. **The Baseline (Sanity Check)**
+* Run a simple model (Dummy/Defaults).
+* *Check:* Does it beat random guessing? If not, fix data.
+
+
+3. **The Tuning (Optimization)**
+* Run `GridSearch` / `RandomSearch`.
+* *Niche:* Maximize hardware (`n_jobs=-1`, AMP).
+
+
+4. **The Diagnostics (Health Check)**
+* Check Confusion Matrix.
+* Check Confidence (`predict_proba` distributions).
+* *Niche:* Identify "Worst Fold" and inspect specific failure points.
+
+
+5. **The Interpretation (The "Why")**
+* Feature Importance / SHAP values.
+* *Check:* Ensure model isn't cheating (e.g., using ID columns).
+
+
+6. **The Serialization (Deployment Prep)**
+* Save model (`joblib` / `.pt`).
+* Save metadata (scaler logic, class names)
